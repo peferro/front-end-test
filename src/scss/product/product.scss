@@ -1,17 +1,50 @@
-@import 'product-image';
-@import 'product-buy-button';
-
 $price-color: brown;
+$thumbnail-boder-color: darkgrey;
+
+.product-container {
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+  border: 1px solid black;
+}
 
 .product-title {
   text-transform: capitalize;
+  font-size: 2em;
 }
 
-.product-panel {
-  display: flex;
+.product-image {
+  display: inline-block;
+  max-width: 50%;
+  padding: 10px 20px;
+  text-align: right;
+  vertical-align: middle;
+
+  img {
+    width: auto;
+    max-height: 300px;
+  }
+}
+
+.product-info {
+  display: inline-block;
+  max-width: 50%;
+  padding: 10px 20px;
+  text-align: left;
+  vertical-align: middle;
 }
 
 .product-price {
   font-size: 1.5em;
   color: $price-color;
+}
+
+  .product-price-cents {
+    vertical-align: super;
+    font-size: smaller;
+  }
+
+.product-similar-thumbnail {
+  height: 50px;
+  padding: 10px;
 }

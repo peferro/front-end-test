@@ -22,7 +22,7 @@ const config = {
     src:'./src/**/*.html'
   },
   js: {
-    src: './src/js/*.js',
+    src: './src/js/**/*.js',
     dest: './js'
   }
 }
