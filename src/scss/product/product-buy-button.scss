@@ -1,0 +1,16 @@
+$buy-button-background: royalblue;
+$buy-button-color: white;
+$buy-button-boder-color: black;
+
+.product-buy-button {
+  background-color: $buy-button-background;
+  border-width: 1px;
+  border-color: $buy-button-boder-color;
+  color: $buy-button-color;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 16px;
+}

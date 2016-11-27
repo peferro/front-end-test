@@ -1,3 +1,17 @@
+@import 'product-image';
+@import 'product-buy-button';
+
+$price-color: brown;
+
 .product-title {
   text-transform: capitalize;
+}
+
+.product-panel {
+  display: flex;
+}
+
+.product-price {
+  font-size: 1.5em;
+  color: $price-color;
 }

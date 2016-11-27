@@ -14,6 +14,7 @@ var uglify = require('gulp-uglify');
 
 const config = {
   styles:  {
+    watch: './src/scss/**/*.scss',
     src: './src/scss/styles.scss',
     dest: './css/'
   },
@@ -35,7 +36,7 @@ gulp.task('sass', function () {
 });
 
 gulp.task('sass:watch', function () {
-  gulp.watch(config.styles.src, ['sass']);
+  gulp.watch(config.styles.watch, ['sass']);
 });
 
 gulp.task('html:watch', function () {
