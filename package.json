@@ -1,0 +1,28 @@
+{
+  "name": "front-end-test",
+  "version": "1.0.0",
+  "description": "Front-end test",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peferro/front-end-test.git"
+  },
+  "author": "Pablo Ferro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peferro/front-end-test/issues"
+  },
+  "homepage": "https://github.com/peferro/front-end-test#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "run-sequence": "^1.2.2"
+  }
+}
