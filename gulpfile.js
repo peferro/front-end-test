@@ -1,6 +1,8 @@
 'use strict';
 
 var gulp = require('gulp');
+var gutil = require('gulp-util');
+var plumber = require('gulp-plumber');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var htmlmin = require('gulp-htmlmin');
@@ -42,7 +44,9 @@ gulp.task('html:watch', function () {
 
 gulp.task('html:minify', function() {
   return gulp.src('src/*.html')
+    .pipe(plumber())
     .pipe(htmlmin({collapseWhitespace: true}))
+    .on('error', gutil.log)
     .pipe(gulp.dest('./'));
 });
 
