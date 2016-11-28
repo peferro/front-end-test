@@ -1,0 +1,55 @@
+$tab-selected-background: white;
+$tab-hover-background: #ddd;
+$tab-not-selected-background: #bbb;
+
+.tabs {
+  float: none;
+  list-style: none;
+  min-height: 180px;
+  padding: 20px;
+  position: relative;
+  text-align: left;
+
+  li {
+    display: block;
+    float: left;
+  }
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  label {
+    background-color: $tab-not-selected-background;
+    border: 1px solid black;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    display: block;
+    padding: 2px 5px;
+    position: relative;
+    z-index: 1;
+    &:hover {
+      background-color: $tab-hover-background;
+    }
+  }
+
+  .tab-content{
+    display: none;
+    left: 0;
+    overflow: hidden;
+    padding: 20px 10px;
+    margin-left: 15px;
+    margin-top: -1px;
+    position: absolute;
+    border: 1px solid black;
+    width: 90%;
+  }
+
+  [id^="tab"]:checked + label {
+    background: $tab-selected-background;
+    border-bottom-color: white;
+  }
+  [id^="tab"]:checked ~ [id^="tab-content"] {
+    display: block;
+  }
+}

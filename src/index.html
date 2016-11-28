@@ -16,10 +16,12 @@
 </head>
 
 <body>
-  <div class="product-container" itemscope itemtype="http://schema.org/Product">
-    <h1 class="product-title" itemprop="name">
-      ipad mini apple 16 gb wifi led 7.9
-    </h1>
+  <article class="product-container" itemscope itemtype="http://schema.org/Product">
+    <header>
+      <h1 class="product-title" itemprop="name">
+        ipad mini apple 16 gb wifi led 7.9
+      </h1>
+    </header>
     <div class="product-panel">
       <div class="product-image">
         <img
@@ -28,7 +30,7 @@
         itemprop="image"
         >
       </div>
-      <div class="product-info">
+      <section class="product-info">
         <p class="product-price" itemprop="price">
           $ 4799<span class="product-price-cents">99</span>
         </p>
@@ -70,11 +72,46 @@
                 <li><img class="product-similar-thumbnail" src="assets/ipad.jpg"></li>
             </ul>
         </div>
-      </div>
+      </section>
     </div>
     <hr>
-    <p>Description and Questions</p>
-  </div>
+    <ul class="tabs" role="tablist">
+        <li>
+          <input type="radio" name="tabs" id="tab-desc" checked />
+          <label for="tab-desc"
+                 role="tab"
+                 aria-controls="tab-content-desc"
+                 tabindex="0"
+          >
+          Product description
+          </label>
+          <div id="tab-content-desc"
+               class="tab-content"
+               role="tabpanel"
+               aria-labelledby="tab-desc"
+          >
+            <p>Description</p>
+          </div>
+        </li>
+        <li>
+          <input type="radio" name="tabs" id="tab-questions" />
+          <label for="tab-questions"
+                 role="tab"
+                 aria-controls="tab-content-questions"
+                 tabindex="0"
+          >
+            Questions
+          </label>
+          <div id="tab-content-questions"
+               class="tab-content"
+               role="tabpanel"
+               aria-labelledby="tab-questions"
+          >
+            <p>Questions</p>
+          </div>
+        </li>
+    </ul>
+  </article>
   <script src="https://ui.mlstatic.com/chico/tiny/0.2.3/tiny.min.js"></script>
   <script src="js/chico.min.js"></script>
   <script src="js/app.js"></script>
