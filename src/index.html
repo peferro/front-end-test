@@ -64,12 +64,20 @@
           </div>
         </form>
         <p>More products like this</p>
-        <div class="product-similar-carousel ch-carousel" itemprop="isSimilarTo">
+        <div class="product-similar-carousel ch-carousel">
             <ul>
-                <li><img class="product-similar-thumbnail" src="assets/ipad.jpg"></li>
-                <li><img class="product-similar-thumbnail" src="assets/ipad.jpg"></li>
-                <li><img class="product-similar-thumbnail" src="assets/ipad.jpg"></li>
-                <li><img class="product-similar-thumbnail" src="assets/ipad.jpg"></li>
+              <li itemprop="isSimilarTo" itemscope itemtype="http://schema.org/Product">
+                <img class="product-similar-thumbnail" src="assets/ipad.jpg">
+              </li>
+              <li itemprop="isSimilarTo" itemscope itemtype="http://schema.org/Product">
+                <img class="product-similar-thumbnail" src="assets/ipad.jpg">
+              </li>
+              <li itemprop="isSimilarTo" itemscope itemtype="http://schema.org/Product">
+                <img class="product-similar-thumbnail" src="assets/ipad.jpg">
+              </li>
+              <li itemprop="isSimilarTo" itemscope itemtype="http://schema.org/Product">
+                <img class="product-similar-thumbnail" src="assets/ipad.jpg">
+              </li>
             </ul>
         </div>
       </section>
@@ -90,7 +98,7 @@
                role="tabpanel"
                aria-labelledby="tab-desc"
           >
-            <p>Description</p>
+            <p itemprop="description" >Description</p>
           </div>
         </li>
         <li>
