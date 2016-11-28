@@ -1,0 +1,22 @@
+$buyer-color: #0f1352;
+$seller-color: #0f520f;
+
+.comment-body {
+  padding: 10px;
+}
+
+.comment.buyer {
+  color: $buyer-color;
+
+  .comment-body {
+    background-color: lighten($buyer-color, 70%);
+  }
+}
+
+.comment.seller {
+  color: $seller-color;
+
+  .comment-body {
+    background-color: lighten($seller-color, 70%);
+  }
+}
